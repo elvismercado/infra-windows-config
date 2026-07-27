@@ -1,0 +1,36 @@
+{
+  "remapShortcuts": {
+    "global": [
+      {
+        "originalKeys": "91;164;37",
+        "newRemapKeys": "91;37",
+        "comment": "Win+Alt+Left → Win+Left (snap left half)"
+      },
+      {
+        "originalKeys": "91;164;39",
+        "newRemapKeys": "91;39",
+        "comment": "Win+Alt+Right → Win+Right (snap right half)"
+      },
+      {
+        "originalKeys": "91;164;38",
+        "newRemapKeys": "91;38",
+        "comment": "Win+Alt+Up → Win+Up (maximize)"
+      },
+      {
+        "originalKeys": "91;164;40",
+        "newRemapKeys": "91;40",
+        "comment": "Win+Alt+Down → Win+Down (restore/minimize)"
+      },
+      {
+        "originalKeys": "91;164;13",
+        "newRemapKeys": "91;38",
+        "comment": "Win+Alt+Enter → Win+Up (maximize)"
+      },
+      {
+        "originalKeys": "91;164;8",
+        "newRemapKeys": "91;40",
+        "comment": "Win+Alt+Backspace → Win+Down (restore)"
+      }
+    ]
+  }
+}

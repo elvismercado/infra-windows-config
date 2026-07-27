@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<unattend xmlns="urn:schemas-microsoft-com:unattend" xmlns:wcm="http://schemas.microsoft.com/WMIConfig/2002/State">
+  <settings pass="windowsPE">
+    <component name="Microsoft-Windows-International-Core-WinPE" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" versionScope="nonSxS">
+      <InputLocale>en-US</InputLocale> <!-- CHANGE THIS -->
+      <SystemLocale>en-US</SystemLocale> <!-- CHANGE THIS -->
+      <UILanguage>en-US</UILanguage> <!-- CHANGE THIS -->
+      <UserLocale>en-US</UserLocale> <!-- CHANGE THIS -->
+    </component>
+  </settings>
+  <settings pass="specialize">
+    <component name="Microsoft-Windows-Shell-Setup" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" versionScope="nonSxS">
+      <ComputerName>MY-PC</ComputerName> <!-- CHANGE THIS -->
+      <TimeZone>Eastern Standard Time</TimeZone> <!-- CHANGE THIS -->
+      <RegisteredOwner></RegisteredOwner> <!-- CHANGE THIS -->
+    </component>
+  </settings>
+  <settings pass="oobeSystem">
+    <component name="Microsoft-Windows-Shell-Setup" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" versionScope="nonSxS">
+      <OOBE>
+        <HideEULAPage>true</HideEULAPage>
+        <HideOnlineAccountScreens>true</HideOnlineAccountScreens>
+        <HideWirelessSetupInOOBE>true</HideWirelessSetupInOOBE>
+        <ProtectYourPC>3</ProtectYourPC>
+      </OOBE>
+      <UserAccounts>
+        <LocalAccounts>
+          <LocalAccount wcm:action="add">
+            <Name>localadmin</Name> <!-- CHANGE THIS -->
+            <Group>Administrators</Group>
+            <Password>
+              <Value></Value> <!-- CHANGE THIS -->
+              <PlainText>true</PlainText>
+            </Password>
+          </LocalAccount>
+        </LocalAccounts>
+      </UserAccounts>
+      <AutoLogon>
+        <Enabled>true</Enabled>
+        <Username>localadmin</Username> <!-- CHANGE THIS -->
+        <Domain>.</Domain>
+        <Password>
+          <Value></Value> <!-- CHANGE THIS -->
+          <PlainText>true</PlainText>
+        </Password>
+        <LogonCount>1</LogonCount>
+      </AutoLogon>
+    </component>
+  </settings>
+</unattend>

@@ -1,0 +1,83 @@
+{
+	"$schema" : "https://aka.ms/winget-packages.schema.2.0.json",
+	"CreationDate" : "2026-04-19T17:20:12.325-00:00",
+	"Sources" : 
+	[
+		{
+			"Packages" : 
+			[
+				{
+					"PackageIdentifier" : "Vencord.Vesktop"
+				},
+				{
+					"PackageIdentifier" : "7zip.7zip"
+				},
+				{
+					"PackageIdentifier" : "SteelSeries.SteelSeriesEngine"
+				},
+				{
+					"PackageIdentifier" : "LizardByte.Sunshine"
+				},
+				{
+					"PackageIdentifier" : "VideoLAN.VLC"
+				},
+				{
+					"PackageIdentifier" : "Logitech.GHUB"
+				},
+				{
+					"PackageIdentifier" : "CloneHeroTeam.CloneHero"
+				},
+				{
+					"PackageIdentifier" : "Logitech.OptionsPlus"
+				},
+				{
+					"PackageIdentifier" : "GermanCoding.SyncTrayzor"
+				},
+				{
+					"PackageIdentifier" : "Guru3D.Afterburner"
+				},
+				{
+					"PackageIdentifier" : "Guru3D.RTSS"
+				},
+				{
+					"PackageIdentifier" : "Valve.Steam"
+				},
+				{
+					"PackageIdentifier" : "Ubisoft.Connect"
+				},
+				{
+					"PackageIdentifier" : "Rem0o.FanControl"
+				},
+				{
+					"PackageIdentifier" : "ElectronicArts.EADesktop"
+				},
+				{
+					"PackageIdentifier" : "HeroicGamesLauncher.HeroicGamesLauncher"
+				},
+				{
+					"PackageIdentifier" : "Beeper.Beeper"
+				},
+				{
+					"PackageIdentifier" : "Brave.Brave"
+				},
+				{
+					"PackageIdentifier" : "beeradmoore.dlss-swapper"
+				},
+				{
+					"PackageIdentifier" : "Meltytech.Shotcut"
+				},
+				{
+					"PackageIdentifier" : "Nanoleaf.NanoleafDesktop"
+				}
+			],
+			"SourceDetails" : 
+			{
+				"Argument" : "https://cdn.winget.microsoft.com/cache",
+				"Identifier" : "Microsoft.Winget.Source_8wekyb3d8bbwe",
+				"Name" : "winget",
+				"Type" : "Microsoft.PreIndexed.Package"
+			}
+		}
+	],
+	"WinGetVersion" : "1.28.220"
+}

@@ -1,0 +1,50 @@
+{
+  "_comment": "FancyZones custom layout — 4 quarters + center zone",
+  "_note": "Import via PowerToys → FancyZones → Launch layout editor → Custom",
+  "layout": {
+    "name": "Quarters + Center",
+    "type": "custom",
+    "zones": [
+      {
+        "name": "Top-Left",
+        "x": 0,
+        "y": 0,
+        "width": 50,
+        "height": 50,
+        "shortcut": "Win+Alt+U → remap to Win+Ctrl+Alt+1"
+      },
+      {
+        "name": "Top-Right",
+        "x": 50,
+        "y": 0,
+        "width": 50,
+        "height": 50,
+        "shortcut": "Win+Alt+I → remap to Win+Ctrl+Alt+2"
+      },
+      {
+        "name": "Bottom-Left",
+        "x": 0,
+        "y": 50,
+        "width": 50,
+        "height": 50,
+        "shortcut": "Win+Alt+J → remap to Win+Ctrl+Alt+3"
+      },
+      {
+        "name": "Bottom-Right",
+        "x": 50,
+        "y": 50,
+        "width": 50,
+        "height": 50,
+        "shortcut": "Win+Alt+K → remap to Win+Ctrl+Alt+4"
+      },
+      {
+        "name": "Center",
+        "x": 15,
+        "y": 10,
+        "width": 70,
+        "height": 80,
+        "shortcut": "Win+Alt+C → remap to Win+Ctrl+Alt+5"
+      }
+    ]
+  }
+}

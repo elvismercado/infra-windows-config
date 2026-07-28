@@ -5,7 +5,7 @@ $directories = @(
     (Join-Path $HOME "downloads")
     (Join-Path $HOME "documents")
     (Join-Path $HOME "projects")
-    (Join-Path $HOME "scripts")
+    (Join-Path $HOME "git\infra-scripts")
     (Join-Path $HOME "bin")
 )
 

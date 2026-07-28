@@ -22,7 +22,7 @@ Create `setup/profiles/<name>.ps1` that:
 1. Dot-sources individual app scripts grouped by category comments (standalone - no inheritance)
 2. Defines `Get-<Name>Apps` in PascalCase, converting hyphenated parts (for example, `fennec-windows` becomes `Get-FennecWindowsApps`)
 3. Does not dot-source `default.ps1`; users select `default` explicitly alongside this profile
-4. Represents a Windows machine or a shared Windows baseline; do not add profiles for Linux hosts managed by `nix-config`
+4. Represents a Windows machine or a shared Windows baseline; do not add profiles for Linux hosts managed by `infra-nix-config`
 
 ## 3. Update documentation
 

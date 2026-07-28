@@ -643,7 +643,7 @@ System environment setup:
 
 ### `setup/config/git.ps1`
 
-Interactive git identity setup (mirrors nix-config’s `postinstall.sh` step):
+Interactive git identity setup (mirrors infra-nix-config’s `postinstall.sh` step):
 - Check if `git` is in PATH (`Get-Command git -ErrorAction SilentlyContinue`). If not found, warn and skip.
 - If `$DryRun` is set, log current git config state and what would be changed, then return (skip all interactive prompts)
 - Check current `git config --global user.name`
@@ -1021,7 +1021,7 @@ Create `setup/profiles/<name>.ps1` that:
 1. Dot-sources individual app scripts grouped by category comments (standalone — no inheritance)
 2. Defines `Get-<Name>Apps` in PascalCase, converting hyphenated parts (for example, `fennec-windows` becomes `Get-FennecWindowsApps`)
 3. Does not dot-source `default.ps1`; users select `default` explicitly alongside this profile
-4. Represents a Windows machine or a shared Windows baseline; do not add profiles for Linux hosts managed by `nix-config`
+4. Represents a Windows machine or a shared Windows baseline; do not add profiles for Linux hosts managed by `infra-nix-config`
 
 ## 3. Update documentation
 

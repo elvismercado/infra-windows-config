@@ -34,7 +34,7 @@ For unattended Windows installation, see [`unattend/`](unattend/).
 ## Repo Structure
 
 ```text
-windows-config/
+infra-windows-config/
 ├── .github/
 │   ├── copilot-instructions.md
 │   └── prompts/

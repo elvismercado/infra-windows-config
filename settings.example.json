@@ -1,6 +1,6 @@
 {
   "hostname": "MY-PC",
   "username": "myuser",
-  "profiles": ["default", "fennec-windows"],
+  "profiles": ["default", "development", "fennec-windows"],
   "excludeApps": []
 }

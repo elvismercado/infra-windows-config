@@ -11,7 +11,7 @@ Declarative Windows configuration via PowerShell + winget.
 
 Bootstrap supports PowerShell 5.1 and 7+. It re-elevates using the same PowerShell edition; PowerShell 7+ is recommended for new machines.
 
-Every machine must explicitly select `default` plus any host-specific profiles, for example `["default", "fennec-windows"]`. Profiles are independent; setup deduplicates apps by winget ID when multiple profiles are selected.
+Every machine must explicitly select `default` plus any host-specific profiles, for example `["default", "development", "fennec-windows"]`. Profiles are independent; setup deduplicates apps by winget ID when multiple profiles are selected.
 
 ## Profiles
 
@@ -20,7 +20,12 @@ See [docs/PROFILES.md](docs/PROFILES.md) for the full profile matrix.
 | Profile | Description |
 | --- | --- |
 | default | Minimum apps for every Windows host |
+| development | VS Code, Git, GitHub CLI, fnm, Python, uv, and OpenSSH Client |
 | fennec-windows | Gaming Windows host additions |
+
+The development profile initializes fnm in PowerShell. Restart PowerShell after
+setup, then run `fnm install --lts` once to install Node.js LTS (which includes
+npm). Authenticate GitHub CLI separately with `gh auth login` when needed.
 
 ## Adding Apps
 
@@ -66,11 +71,15 @@ infra-windows-config/
 │   │   ├── dlss-swapper.ps1
 │   │   ├── ea-desktop.ps1
 │   │   ├── fan-control.ps1
+│   │   ├── fnm.ps1
+│   │   ├── git.ps1
+│   │   ├── github-cli.ps1
 │   │   ├── heroic.ps1
 │   │   ├── logitech-ghub.ps1
 │   │   ├── logitech-options-plus.ps1
 │   │   ├── nanoleaf-desktop.ps1
 │   │   ├── powertoys.ps1
+│   │   ├── python.ps1
 │   │   ├── rtss.ps1
 │   │   ├── shotcut.ps1
 │   │   ├── steelseries-engine.ps1
@@ -78,6 +87,7 @@ infra-windows-config/
 │   │   ├── sunshine.ps1
 │   │   ├── synctrayzor.ps1
 │   │   ├── ubisoft-connect.ps1
+│   │   ├── uv.ps1
 │   │   ├── vesktop.ps1
 │   │   ├── vlc.ps1
 │   │   ├── vscode.ps1
@@ -88,6 +98,7 @@ infra-windows-config/
 │   ├── config/
 │   │   ├── environment.ps1
 │   │   ├── git.ps1
+│   │   ├── openssh.ps1
 │   │   ├── powershell-profile-content.ps1
 │   │   ├── powershell-profile.ps1
 │   │   └── powertoys/
@@ -97,6 +108,7 @@ infra-windows-config/
 │   ├── helpers.ps1
 │   ├── profiles/
 │   │   ├── default.ps1
+│   │   ├── development.ps1
 │   │   └── fennec-windows.ps1
 │   └── setup.ps1
 └── unattend/

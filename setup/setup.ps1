@@ -103,6 +103,7 @@ function Step-ConfigureSystem {
     $configScripts = @(
         (Join-Path $PSScriptRoot "config\environment.ps1")
         (Join-Path $PSScriptRoot "config\git.ps1")
+        (Join-Path $PSScriptRoot "config\openssh.ps1")
         (Join-Path $PSScriptRoot "config\powershell-profile.ps1")
     )
     foreach ($configScript in $configScripts) {
